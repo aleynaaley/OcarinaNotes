@@ -1,55 +1,133 @@
+/* Genel */
 body {
-  font-family: Arial, sans-serif;
-  background: #f8f9fa;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
 }
 
-.container {
-  width: 80%;
-  max-width: 700px;
-  margin: 40px auto;
+/* Yeşil arka plan */
+.background {
+  background: linear-gradient(135deg, #0f3d0f, #2e8b57);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Menü ikonu */
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Kartlar */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  margin: 15px 0;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Başlık */
+.header-card h1 {
+  margin: 0;
   text-align: center;
+  font-size: 26px;
+  color: #222;
+  border-bottom: 2px solid #2e8b57;
+  padding-bottom: 10px;
 }
 
+/* Label */
+.label {
+  display: block;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Textarea */
 textarea {
   width: 100%;
-  height: 120px;
-  font-size: 16px;
+  height: 140px;
+  font-size: 15px;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
   resize: vertical;
+  outline: none;
+  transition: border 0.3s;
+}
+textarea:focus {
+  border: 1px solid #2e8b57;
+  box-shadow: 0 0 6px rgba(46,139,87,0.4);
 }
 
+/* Buton */
 button {
-  background: #4caf50;
+  background: #2e8b57;
   color: white;
   border: none;
-  padding: 10px 18px;
+  padding: 12px 20px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 25px;
+  width: 100%;
+  transition: background 0.3s, transform 0.1s;
 }
-
 button:hover {
-  background: #45a049;
+  background: #256d47;
+  transform: scale(1.03);
+}
+button:active {
+  transform: scale(0.97);
 }
 
-#output {
-  margin-top: 25px;
-  text-align: left;
+/* Çıktı alanı */
+.output-card {
+  min-height: 120px;
 }
 
-.line {
-  margin-bottom: 20px;
-}
-
+/* Satır başlıkları */
 .line h3 {
-  margin: 0 0 10px 0;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #2e4a2e;
 }
 
+/* Nota resimleri */
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .notes img {
-  width: 60px;
+  width: 130px;
   height: auto;
-  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  background: #fafafa;
+  padding: 4px;
+}
+
+/* Hata */
+.error {
+  background: #ffecec;
+  border: 1px solid #ff9b9b;
+  color: #8b0000;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 16px;
 }

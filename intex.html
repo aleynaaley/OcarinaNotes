@@ -2,16 +2,30 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Okarina Nota Çevirici</title>
+  <title>Ocarina Note Converter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Okarina Nota Çevirici</h1>
-    <textarea id="notesInput" placeholder="Notaları buraya yazın...&#10;Örn: C C D E&#10;G c f"></textarea>
-    <button id="convertBtn">Göster</button>
+  <div class="background">
+    <!-- Sol üst menü ikonu -->
+    <div class="menu-icon">☰</div>
 
-    <div id="output"></div>
+    <!-- Başlık kutusu -->
+    <div class="card header-card">
+      <h1>Ocarina Note Converter</h1>
+    </div>
+
+    <!-- Input kutusu -->
+    <div class="card input-card">
+      <label for="notesInput" class="label">Write your notes in this section</label>
+      <textarea id="notesInput" placeholder="Example:&#10;A A C G A A G&#10;c c f e e c c&#10;&#10;You can write any notes you want on each line."></textarea>
+      <button id="convertBtn">SHOW</button>
+    </div>
+
+    <!-- Çıktı kutusu -->
+    <div class="card output-card" id="output">
+      <!-- Buraya sonuçlar veya hata mesajı gelecek -->
+    </div>
   </div>
 
   <script src="script.js"></script>
