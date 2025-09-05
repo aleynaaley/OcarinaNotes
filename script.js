@@ -5,19 +5,21 @@ document.getElementById("convertBtn").addEventListener("click", () => {
 
   // Nota -> resim dosyası (dosya isimleri sadece resim dosyası adı olacak)
   const noteMap = {
-    "C": "C.png",
-    "D": "D.png",
-    "E": "E.png",
-    "F": "F.png",
-    "G": "G.png",
-    "A": "A.png",
-    "B": "B.png",
-    "c": "c.png",
-    "d": "d.png",
-    "e": "e.png",
-    "f": "f.png",
-    "c_y": "c_y.png"
-    // gerekiyorsa buraya ekle...
+  // Büyük harfler
+  "C": "C.png", "Do": "C.png",
+  "D": "D.png", "Re": "D.png",
+  "E": "E.png", "Mi": "E.png",
+  "F": "F.png", "Fa": "F.png",
+  "G": "G.png", "Sol": "G.png",
+  "A": "A.png", "La": "A.png",
+  "B": "B.png", "Si": "B.png",
+
+  // Küçük harfler (oktav yukarı)
+  "c": "c_y.png", "do": "c_y.png",
+  "d": "d_y.png", "re": "d_y.png",
+  "e": "e_y.png", "mi": "e_y.png",
+  "f": "f_y.png", "fa": "f_y.png",
+
   };
 
   const imageFolder = "images/ocarina/"; // resimler burada

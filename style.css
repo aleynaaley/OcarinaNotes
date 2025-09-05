@@ -111,13 +111,13 @@ button:active {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .notes img {
-  width: 130px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  background: #fafafa;
-  padding: 4px;
+  width: 110px;
+  transition: transform 0.2s ease;
+}
+.notes img:hover {
+  transform: scale(1.15);
 }
 
 /* Hata */

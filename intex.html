@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <title>Ocarina Note Converter</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="background">
     <!-- Sol üst menü ikonu -->
@@ -15,10 +17,21 @@
       <h1>Ocarina Note Converter</h1>
     </div>
 
+    <div class="card info-card">
+      <h2>Nasıl Kullanılır?</h2>
+      <p>
+        Bu araç sayesinde yazdığınız notaları ocarina üzerindeki parmak pozisyonlarıyla görebilirsiniz.Bu platformda Ocarina 12-delik ve uluslararası standart akortlama C major (Do Majör) üzerine yapılmıştır.<br><br>
+        - Büyük harfler: C, D, E... = Orta oktav (Do, Re, Mi...)<br>
+        - Küçük harfler: c, d, e... = Üst oktav (do, re, mi...)<br>
+        - İsterseniz Do, Re, Mi, Fa, Sol, La, Si, do, re, mi ve fa veya C, D, E, F, G, A, B, c, d, e ve f  şeklinde yazabilirsiniz.<br><br>
+      </p>
+    </div>
+
     <!-- Input kutusu -->
     <div class="card input-card">
       <label for="notesInput" class="label">Write your notes in this section</label>
-      <textarea id="notesInput" placeholder="Example:&#10;A A C G A A G&#10;c c f e e c c&#10;&#10;You can write any notes you want on each line."></textarea>
+      <textarea id="notesInput"
+        placeholder="Example:&#10;A A C G A A G&#10;c c f e e c c&#10;&#10;You can write any notes you want on each line."></textarea>
       <button id="convertBtn">SHOW</button>
     </div>
 
@@ -30,4 +43,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
