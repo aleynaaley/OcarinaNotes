@@ -42,6 +42,7 @@ npm install
 
 # Geliştirme sunucusunu başlat
 npm run dev
+```
 
 ## 🚀 Site
 https://ocarinaconverter.netlify.app/
