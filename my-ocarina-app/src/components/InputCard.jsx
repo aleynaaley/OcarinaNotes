@@ -13,7 +13,7 @@ export default function InputCard({ notes, setNotes, handleConvert, clearNotes }
           className="w-full h-40 p-4 rounded-xl border border-white/30 bg-white/10 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-all resize-none backdrop-blur-sm"
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
-          placeholder="Example :&#10;C D E F G A B&#10;c d e f&#10;Do Re Mi Fa Sol La Si"
+          placeholder="Example :&#10;C D E F G A B&#10;c d e f&#10;a# c# d#&#10;A# C# D# F#"
         />
         
         <div className="flex flex-wrap gap-3 mt-6">

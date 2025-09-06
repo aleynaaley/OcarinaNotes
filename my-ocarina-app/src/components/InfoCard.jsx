@@ -22,17 +22,37 @@ export default function InfoCard() {
 
         {isExpanded && (
           <div className="mt-4 text-white/90 space-y-3">
-            <p>Thanks to this tool, you can see the notes you write with the finger positions on the ocarina. </p>
-            <p> On this platform, the ocarina is 12-hole and the international standard tuning is made on C major (C Major).</p>
+            <p>
+              Thanks to this tool, you can see the finger positions for the
+              notes you write. This platform is designed for a 12-hole ocarina
+              tuned in C major.
+            </p>
+
+            <p>
+              Notes are written in two octaves. Capital letters represent the
+              <strong> middle octave</strong> (lower sounds), and lowercase
+              letters represent the <strong> upper octave</strong> (higher
+              sounds).
+            </p>
 
             <div className="grid md:grid-cols-2 gap-4 mt-4">
               <div className="bg-white/10 rounded-xl p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">Capital Letters (Middle Octave)</h3>
-                <p className="text-sm">C, D, E, F, G, A, B or Do, Re, Mi, Fa, Sol, La, Si</p>
+                <h3 className="font-semibold text-blue-200 mb-2">
+                  Capital Letters (Middle Octave)
+                </h3>
+                <p className="text-sm">
+                  C, D, E, F, G, A, B <br />
+                  Example: A = A4 (Low A), A# = A#4 (Low A sharp)
+                </p>
               </div>
               <div className="bg-white/10 rounded-xl p-4">
-                <h3 className="font-semibold text-purple-200 mb-2">Lowercase Letters (Upper Octave)</h3>
-                <p className="text-sm">c, d, e, f or do, re, mi, fa</p>
+                <h3 className="font-semibold text-purple-200 mb-2">
+                  Lowercase Letters (Upper Octave)
+                </h3>
+                <p className="text-sm">
+                  c, d, e, f ... <br />
+                  Example: a = A5 (High A), a# = A#5 (High A sharp)
+                </p>
               </div>
             </div>
           </div>
